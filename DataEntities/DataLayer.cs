@@ -7,6 +7,8 @@ namespace DataEntities
     {
         public static void Main(string[] args)
         {
+            /* creates object dictionaries for each class below */
+            var product_dictionary = new Dictionary<string, object>();
         }
 
         class Products
@@ -110,6 +112,12 @@ namespace DataEntities
         /* Here are functions to add any entity that may need to be added*/
         private static void AddProduct()
         {
+            Console.WriteLine("Enter a name for the product: ");
+            string name = Console.ReadLine();
+
+            product_dictionary.Add(name, new Products);
+            Console.WriteLine("Enter a manufacturer for the product: ");
+            string manufacturer = Console.ReadLine();
             
         }
     }
