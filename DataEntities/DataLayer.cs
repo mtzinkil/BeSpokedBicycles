@@ -115,7 +115,7 @@ namespace DataEntities
             Console.WriteLine("Enter a name for the product: ");
             string name = Console.ReadLine();
 
-           
+
             Console.WriteLine("Enter a manufacturer for the product: ");
             string manufacturer = Console.ReadLine();
             
